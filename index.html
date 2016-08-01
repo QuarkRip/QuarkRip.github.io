@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+      <link rel="stylesheet" href="./main.css">
+      <title>QuarkRip</title>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+   </head>
+   <body>
+      <nav>
+         <div class="nav-wrapper">
+            <a href="#" class="brand-logo center">QuarkRip</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+               <li><a href="#info">Info</a></li>
+               <li><a href="#Download">Download</a></li>
+               <li><a href="#Donate">Donate</a></li>
+            </ul>
+         </div>
+      </nav>
+      <main>
+         <center><img src="./world.png"></center>
+      <div class="container">
+         <ul class="collapsible" data-collapsible="accordion">
+            <li>
+               <div class="collapsible-header" id="info"><i class="large material-icons">info_outline</i>Info</div>
+               <div class="collapsible-body">
+                  <p>Lorem ipsum dolor sit amet.</p>
+               </div>
+            </li>
+            <li>
+               <div class="collapsible-header" id="Download"><i class="large material-icons">cloud_download</i>Download</div>
+               <div class="collapsible-body">
+                  <form>
+                          <div class="row">
+                        <div class="col s11 offset-s1">
+                        <br>
+                        <h5>Select Your OS and Download Version!</h5>
+                        </div>
+                        <br>
+                        <br>
+                         <div class="col s6 offset-s1">
+                        <input name="OS" type="radio" id="Mac" />
+                        <label for="Mac">Mac</label>
+                        <input name="OS" type="radio" id="Linux" />
+                        <label for="Linux">Linux</label>
+                        <br>
+                        <br>
+                        <div class="input-field">
+                        <select id="Verison">
+                           <option value="" disabled selected>Choose your verision</option>
+                           <option value="009">0.0.9</option>
+                           <option value="0010">0.0.10</option>
+                        </select>
+                        <label>Download Verison</label>
+                        </div>
+                        <br>
+                        <a><h5 onclick="download()" style="cursor:pointer">Download<i class="material-icons right">cloud_download</i></h5></a>
+                     
+                        </div>
+                        
+                     
+                  
+               </div>
+            </li>
+            <li>
+               <div class="collapsible-header" id="Donate"><i class="large material-icons">done</i>Donate</div>
+               <div class="collapsible-body">
+                  <p>Lorem ipsum dolor sit amet.</p>
+               </div>
+            </li>
+         </ul>
+      </div>
+      </main>
+      <footer class="page-footer">
+         <div class="container">
+            <div class="row">
+               <div class="col l6 s12">
+                  <h5 class="white-text">QuarkRip</h5>
+                  <p class="grey-text text-lighten-4">Content for footer here!</p>
+               </div>
+            </div>
+         </div>
+         <div class="footer-copyright">
+            <div class="container">
+               &#169; 2016 Some Company/Person
+            </div>
+         </div>
+      </footer>
+      <!--Import jQuery before materialize.js-->
+      <script src="./lazyload.js"></script>
+      <script>
+        LazyLoad.js('https://code.jquery.com/jquery-2.1.1.min.js');
+        LazyLoad.js('https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js');
+        LazyLoad.js('./script.js');
+      </script>
+      <script>
+        ((window.gitter = {}).chat = {}).options = {
+          room: 'HittmanA/QuarkRip'
+        };
+      </script>
+      <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+   </body>
+</html>

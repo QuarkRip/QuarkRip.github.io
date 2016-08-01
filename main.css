@@ -1,0 +1,19 @@
+@font-face {
+    font-family: Benguiat-Book;
+    src: url("https://files.gitter.im/getsquared-xyz/Offtopic/Benguiat-Book.ttf");
+}
+
+body {
+  font-family: Benguiat-Book;
+}
+
+ body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+     
